@@ -11,7 +11,6 @@
 		2E4E48FA64FB9A2E92EE7264 /* Pods_Flixster_FlixsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2E5FDDF186A8D06B9C2CDE /* Pods_Flixster_FlixsterUITests.framework */; };
 		40EE1130D1E986E566A7291B /* Pods_FlixsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7735CDDC5B2727A049230D03 /* Pods_FlixsterTests.framework */; };
 		9412E03D26F2D5100045F8C4 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9412E03C26F2D5100045F8C4 /* AlamofireImage */; };
-		9412E03F26F3081E0045F8C4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9412E03E26F3081E0045F8C4 /* Storyboard.storyboard */; };
 		945EC4B726F2B7B800C170FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945EC4B626F2B7B800C170FD /* AppDelegate.swift */; };
 		945EC4B926F2B7B800C170FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945EC4B826F2B7B800C170FD /* SceneDelegate.swift */; };
 		945EC4BE26F2B7B800C170FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945EC4BC26F2B7B800C170FD /* Main.storyboard */; };
@@ -48,7 +47,6 @@
 		4EC13183F5B87106FED7D75E /* Pods-Flixster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster.debug.xcconfig"; path = "Target Support Files/Pods-Flixster/Pods-Flixster.debug.xcconfig"; sourceTree = "<group>"; };
 		7735CDDC5B2727A049230D03 /* Pods_FlixsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlixsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		881B5616487882BD5BEC7BAE /* Pods-Flixster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster.release.xcconfig"; path = "Target Support Files/Pods-Flixster/Pods-Flixster.release.xcconfig"; sourceTree = "<group>"; };
-		9412E03E26F3081E0045F8C4 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		945EC4B326F2B7B800C170FD /* Flixster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flixster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945EC4B626F2B7B800C170FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		945EC4B826F2B7B800C170FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				945EC4BF26F2B7B900C170FD /* Assets.xcassets */,
 				945EC4C126F2B7B900C170FD /* LaunchScreen.storyboard */,
 				945EC4BC26F2B7B800C170FD /* Main.storyboard */,
-				9412E03E26F3081E0045F8C4 /* Storyboard.storyboard */,
 			);
 			path = Flixster;
 			sourceTree = "<group>";
@@ -291,7 +288,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				945EC4C326F2B7B900C170FD /* LaunchScreen.storyboard in Resources */,
-				9412E03F26F3081E0045F8C4 /* Storyboard.storyboard in Resources */,
 				945EC4C026F2B7B900C170FD /* Assets.xcassets in Resources */,
 				945EC4BE26F2B7B800C170FD /* Main.storyboard in Resources */,
 			);
