@@ -16,8 +16,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 	// Array of dictionary
 	var movies = [[String: Any]]()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 
 		tableView.dataSource = self
 		tableView.delegate = self
@@ -43,11 +43,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 			 }
 		}
 		task.resume()
-    }
+	}
 
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return movies.count
 	}
+
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
@@ -59,21 +60,39 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 		let baseUrl = "https://image.tmdb.org/t/p/w185"
 		let posterPath = movie["poster_path"] as! String
 		let posterUrl = URL(string: baseUrl + posterPath)
-		
+
 		cell.posterView.af.setImage(withURL: posterUrl!)
 		cell.titleLabel.text = title
 		cell.synopsisLabel.text = synopsis
 		return cell
 	}
 
-    /*
-    // MARK: - Navigation
+	/*
+	// MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	// In a storyboard-based application, you will often want to do a little preparation before navigation
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// Get the new view controller using segue.destination.
+		// Pass the selected object to the new view controller.
+	}
+	*/
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// Get the new view controller using segue.destination.
+		// Pass the selected object to the new view controller.
+
+
+		// find the selected movie
+		let cell = sender as! UITableViewCell
+		let indexPath = tableView.indexPath(for: cell)!
+		let movie = movies[indexPath.row]
+
+
+		// pass the info
+
+		let detailsViewController = segue.destination as! MovieDetailsViewController
+		detailsViewController.movie = movie
+
+		tableView.deselectRow(at: indexPath, animated: true)
+	}
 
 }
