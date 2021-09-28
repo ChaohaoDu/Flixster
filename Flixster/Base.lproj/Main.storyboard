@@ -145,7 +145,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKd-ZH-e7h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-128.98550724637681" y="991.74107142857133"/>
+            <point key="canvasLocation" x="284" y="957"/>
+        </scene>
+        <!--Trailer View Controller-->
+        <scene sceneID="kS3-QN-Qh1">
+            <objects>
+                <viewController id="Wx2-SR-ocK" customClass="TrailerViewController" customModule="Flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A5s-BF-a2D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3l-qg-oES">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Szo-U5-spY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="u3l-qg-oES" id="Ni3-IU-0Xu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8tY-wm-Zmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1179.7101449275362" y="962.94642857142856"/>
         </scene>
         <!--Movie Grid View Controller-->
         <scene sceneID="2X1-It-qUh">
@@ -182,6 +211,7 @@
                                         <size key="customSize" width="160" height="195"/>
                                         <connections>
                                             <outlet property="posterView" destination="xtx-XN-zEr" id="iNk-sK-23f"/>
+                                            <segue destination="4Vs-8B-QWo" kind="show" id="i2C-ph-fg6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -254,6 +284,9 @@
             <point key="canvasLocation" x="748" y="-559"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="i2C-ph-fg6"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>

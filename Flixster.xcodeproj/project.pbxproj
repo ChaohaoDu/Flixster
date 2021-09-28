@@ -23,6 +23,7 @@
 		948E05862701427800A49E4C /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E05852701427800A49E4C /* MovieDetailsViewController.swift */; };
 		948E0588270145FD00A49E4C /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E0587270145FD00A49E4C /* MovieGridViewController.swift */; };
 		948E058C27014AE600A49E4C /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948E058B27014AE600A49E4C /* MovieGridCell.swift */; };
+		94D428D9270154A3007BF669 /* TrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D428D8270154A3007BF669 /* TrailerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		948E05852701427800A49E4C /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		948E0587270145FD00A49E4C /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
 		948E058B27014AE600A49E4C /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
+		94D428D8270154A3007BF669 /* TrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerViewController.swift; sourceTree = "<group>"; };
 		9BE25CB0CCDA48C2D3C9C013 /* Pods-Flixster-FlixsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster-FlixsterUITests.release.xcconfig"; path = "Target Support Files/Pods-Flixster-FlixsterUITests/Pods-Flixster-FlixsterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E2F3071C923275C7A4F8256D /* Pods-Flixster-FlixsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixster-FlixsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flixster-FlixsterUITests/Pods-Flixster-FlixsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 				945EC4C126F2B7B900C170FD /* LaunchScreen.storyboard */,
 				948E058B27014AE600A49E4C /* MovieGridCell.swift */,
 				945EC4BC26F2B7B800C170FD /* Main.storyboard */,
+				94D428D8270154A3007BF669 /* TrailerViewController.swift */,
 				948E0587270145FD00A49E4C /* MovieGridViewController.swift */,
 				948E05852701427800A49E4C /* MovieDetailsViewController.swift */,
 			);
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D428D9270154A3007BF669 /* TrailerViewController.swift in Sources */,
 				948E05862701427800A49E4C /* MovieDetailsViewController.swift in Sources */,
 				945EC4B726F2B7B800C170FD /* AppDelegate.swift in Sources */,
 				945EC4B926F2B7B800C170FD /* SceneDelegate.swift in Sources */,

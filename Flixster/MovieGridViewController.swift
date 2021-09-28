@@ -25,8 +25,8 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
 
 
 		let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-		layout.minimumLineSpacing = 4
-		layout.minimumInteritemSpacing = 4
+		layout.minimumLineSpacing = 2
+		layout.minimumInteritemSpacing = 2
 
 		let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
 		layout.itemSize = CGSize(width: width, height: width * 3 / 2)
@@ -79,6 +79,20 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
 	}
 
 
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		// Get the new view controller using segue.destination.
+		// Pass the selected object to the new view controller.
 
 
+		// find the selected movie
+
+		let cell = sender as! UICollectionViewCell
+		let indexPath = collectionView.indexPath(for: cell)!
+		let movie = movies[indexPath.item]
+
+		// Pass info
+		let detailsViewController = segue.destination as! MovieDetailsViewController
+		detailsViewController.movie = movie
+		collectionView.deselectItem(at: indexPath, animated: true)
+	}
 }
